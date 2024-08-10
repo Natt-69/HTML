@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram </title>
+    <link rel="shortcut icon" href="img/Instagram-Logo-2016.png" type="image/x-icon">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
+        header{
+            background-color: #8a1cd3;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .search-bar input{
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            width: 200px;
+  
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .feed{
+            width: 100%;
+            max-width: 600px;
+        }
+        .post{
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .post img{
+            width: 100%;
+            height: auto;
+        }
+        .post .caption{
+            padding: 10px;
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #2862df;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        footer img{
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+<p>Instagram</p>
+        <form class="search-bar">
+            <input type="text" placeholder="Buscar">
+        </form>
+        <section class="nav-icons">
+            <p>Notificaciones</p>
+            <p>Mensajes</p>
+            <p>Perfil</p>
+        </section>
+    </header>
+    <main>
+        <section class="feed">
+            <article class="post">
+                <p>@nicol-757</p>
+                <section class="caption">
+                    <p>Descripcióon de la publicacion de nicol</p>
+                </section>
+            </article>
+            <article class="post">
+                <p>@seleccioncolombiafc</p>
+                <section class="caption">
+                    <p>Descripcion de la publicacion de seleccion colombia fc</p>
+                </section>
+            </article>
+            <article class="post">
+                <p>@harold_ghti</p>
+                <section class="caption">
+                    <p>Descripcion de la publicacion de harold</p>
+                </section>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Inicio</p>
+        <p>Buscar</p>
+        <p>Crear publicacion</p>
+        <p>Actividad</p>
+        <p>Perfil</p>
+    </footer>
+</body>
+</html>

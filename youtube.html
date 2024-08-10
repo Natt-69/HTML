@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="shortcut icon" href="img/iconoyoutube.png" type="image/x-icon">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: whitesmoke;
+        }
+        header{
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px black;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        .search-form{
+            flex-grow: 1;
+            margin: 0 20px;
+            display: flex;
+        }
+        .search-form input{
+            width: 100%;
+            padding: 8px;
+            border: 1px solid ;
+            border-radius: 2px;
+        }
+        .search-form button{
+            padding: 8px 12px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        .user-icon{
+            height: 30px;
+        }
+        nav{
+            width: 240px;
+            background-color: white;
+            padding-top: 70px;
+            position: fixed;
+            height: 100vh;
+            box-shadow: 2px  5px black;
+            display: flex;
+            flex-direction: column;
+        }
+        nav ul{
+            list-style-type: none;
+        }
+        nav ul li{
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            border-bottom: 1px solid whitesmoke;
+            cursor: pointer;
+        }
+        nav ul li:hover{
+            background-color: white;
+        }
+        .footer{
+            background-color: whitesmoke;
+            padding: 10px;
+            border-top: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer h2{
+            margin: 0 0 10px;
+            font-size: 16px;
+        }
+        .footer p{
+            margin: 0;
+            font-size: 10px;
+            color: gray;
+            text-align: center;
+        }
+        main{
+            margin-left: 240px;
+            padding: 100px 100px 100px 200px;
+            background-color: white;
+            flex-grow: 1;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        article{
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px black;
+            overflow: hidden;
+        }
+
+        article h3{
+            margin: 10px;
+            font-size: 18px;
+        }
+        article p{
+            margin: 10px;
+            color: gray;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Youtube</p>
+        <form class="search-form">
+            <input type="text" placeholder="Buscar">
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+
+    <nav>
+        <ul>
+            <li>Buscar</li>
+            <li>Acceder</li>
+            <li>Principal</li>
+            <li>Shorts</li>
+            <li>Suscripciones</li>
+            <li>Tu</li>
+            <li>Historial</li>
+            <li>Explorar</li>
+            <li>Tendencias</li>
+            <li>Musica</li>
+            <li>En vivo</li>
+            <li>Videojuegos</li>
+            <li>Noticias</li>
+            <li>Deportes</li>
+            <li>Aprendizaje</li>
+            <li>Mas de YouTube</li>
+            <li>YouTube Premium</li>
+            <li>YouTube Music</li>
+            <li>YouTube Kids</li>
+            <li>Configuracion</li>
+            <li>Historial de denuncias</li>
+            <li>Ayuda</li>
+            <li>Enviar comentarios</li>
+            <li>Acerca de</li>
+            <li>Prensa</li>
+            <li>Derechos de autor</li>
+            <li>Comunicarte con nosotros</li>
+            <li>Creadores</li>
+            <li>Anunciar</li>
+            <li>Desarrolladores</li>
+            <li>Condiciones</li>
+            <li>Privacidad</li>
+            <li>Politicas y seguridad</li>
+            <li>Como funciona YouTube</li>
+            <li>Prueba funciones nuevas</li>
+        </ul>
+    </nav>
+
+    <main>
+        <article> 
+            <h3>Tecnicas para ser un buen desarrollador</h3>
+            <p>Canal 1 • 1M vistas • hace 1 dia</p>
+        </article>
+        <article>
+            <h3>HOOD-Trueno</h3>
+            <p>Trueno • 500k vistas • hace 2 días</p>
+        </article>
+        <article>
+            <h3>Ojos verdes- Nicki Nicole</h3>
+            <p>Nicki Nicole • 750k vistas • hace 3 dias</p>
+        </article>
+        <article>
+            <h3>Los mejores goles del 2024</h3>
+            <p>Canal 4 • 300k vistas • hace 4 dias</p>
+        </article>
+        <article>
+            <h3>BHAVI x TRUENO- SUNDAY</h3>
+            <p>Bhaviboi• 900k vistas • hace 5 dias</p>
+        </article>
+        <article>
+            <h3>MAMICHULA-TRUENO ft NICKI NICOLE</h3>
+            <p>bizarrap• 100M vistas • hace 6 dias</p>
+        </article>
+        <article>
+            <h3>3 PECADOS DESPUES- MILOJ</h3>
+            <p>Miloj• 1.2M vistas • hace 2 semanas</p>
+        </article>
+        <article>
+            <h3>FANTASMAS-HUMBE</h3>
+            <p>Humbe• 2M vistas • hace 4 meses</p>
+        </article>
+        <article>
+            <h3>TIROTEO-MARC SEGUI ft RAUW ALEJANDRO</h3>
+            <p>Marc segui• 10M vistas • hace 3 años</p>
+        </article>
+        <article>
+            <h3>DOBLEXXO- J BALVIN,FEID</h3>
+            <p>J Balvin• 834,046 vistas • hace 1 dia</p>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <h2>© 2024 Google LLC</h2>
+        <p>Busca algo para comenzar. Comienza a mirar videos para ayudarnos a crear un feed que te encantara</p>
+    </footer>
+</body>
+</html>
